@@ -26,6 +26,7 @@
                     <a href="{{ route('admin.dashboard') }}">Admin Dashboard</a>
                 @elseif(auth()->user()->role === 'user')
                     <a href="{{ route('user.dashboard') }}">User Dashboard</a>
+                    <a href="{{ route('user.history' }}">History</a>
                 @endif
 
                 <!-- Logout Form -->
